@@ -1,9 +1,10 @@
 import requests
+import lxml
 
 
 def Func():
-    x = 0
-    print(x)
+    r = requests.get('https://www.google.co.jp/')
+    print(r.status_code)
 
 if __name__ == '__main__':
     Func()
